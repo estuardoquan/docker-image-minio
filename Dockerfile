@@ -8,4 +8,4 @@ HEALTHCHECK CMD mc ready local
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
-CMD ["minio", "server", "--certs-dir", "/var/local/step", "/data", "--console-address", ":9001"] 
+CMD ["minio", "server", "/data", "--console-address", ":9001"] 
